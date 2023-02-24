@@ -1,0 +1,19 @@
+//Disjoint Set Algo
+int P[] = new int[n];
+initialize(){
+    for(int i=0;i<n;i++){
+        P[i] = i;
+    }
+}
+// find the parent node of a set
+int find(int x){
+    if(P[x]==x) return x;
+    return find(P[x]); // recursive calls till not get
+    // the parent element (depends on the high of tree)
+}
+// join the set 
+void Union(int a,int b){
+    int xRoot = find(a), yRoot = find(b);
+    if(x==y) return;
+    p[y] = x;
+}
